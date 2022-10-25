@@ -1,5 +1,6 @@
 enum class Player(val symbol:Char) {
-    White('w'), Black('b')
+    White('w'), Black('b');
+    fun turn() = if (this == White) Black else White
 }
 
 fun String.toPlayer():Player {
