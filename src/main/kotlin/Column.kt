@@ -1,4 +1,4 @@
-const val BOARD_DIM:Int = 8
+
 
 fun Char.toColumnOrNull():Column? = if (this - 'a' > BOARD_DIM - 1
     || BOARD_DIM > 'z' - 'a'||  this !in ('a' .. 'z')) null
